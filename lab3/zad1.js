@@ -24,11 +24,11 @@ function isEquals(val_1, val_2) {
     (val_1 === val_2) ? console.log('C') : console.log('D');
 }
 
-// isEquals(2, '2'); A D
-// isEquals(null, undefined); A D
+// isEquals(2, '2'); A D, Równe wartością, ale int != srt
+// isEquals(null, undefined); A D 
 // isEquals(undefined, NaN); B D
-// isEquals(['a', 'b', 'c'], ['b', 'c', 'd']); B D
-// isEquals(0, ''); A D
+// isEquals(['a', 'b', 'c'], ['b', 'c', 'd']); B D, nierówne
+// isEquals(0, ''); A D, zarówno 0 jak i pusty string są wartościami 'falsy' więc są równe wartościowo
 // isEquals('0', ''); B D
 // isEquals(+0, -0); A C
 // isEquals(0, false); A D
